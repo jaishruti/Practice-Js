@@ -1,0 +1,41 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  color: wheat;
+}
+.wrapper {
+  background-color: black;
+}
+.counter {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.count-block {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  justify-content: center;
+  color: black;
+}
+.pike {
+  font-size: 2rem;
+  padding: 2rem;
+}
+button {
+  background: none;
+  border-style: none;
+  font-size: larger;
+  padding: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
