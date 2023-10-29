@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+}
+body {
+  color: wheat;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: relative;
+  height: 100vh;
+}
+.round1 {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #d84869;
+  background: linear-gradient(-25deg, #d84869, #f46641);
+  animation: circle1Animate 15s infinite;
+  z-index: ;
+}
+
+@keyframes circle1Animate {
+  30% {
+    left: 30%;
+    top: 4%;
+    scale: 1.2;
+  }
+}
+.round2 {
+  position: absolute;
+  bottom: 5%;
+  right: 30%;
+  width: 19em;
+  height: 19em;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #5648d8;
+  background: linear-gradient(-25deg, #5648d8, #8641f4);
+  animation: circle2Animate 8s infinite;
+}
+@keyframes circle2Animate {
+  80% {
+    bottom: 2%;
+    right: 20%;
+  }
+}
+.card {
+  position: absolute;
+
+  height: 90vh;
+  width: 35vw;
+  background-color: #918a8a1a;
+  border: 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid #ffffff30;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  /* color: #ffffff; */
+  z-index: 9;
+}
+#profile-photo {
+  border-radius: 50%;
+}
+.heading {
+  font-size: 2rem;
+  color: azure;
+}
+.sub-heading {
+  color: rgb(189, 187, 187);
+}
+.button-section {
+  display: flex;
+  gap: 1em;
+}
+button {
+  border-style: none;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: aliceblue;
+  background: none;
+  color: azure;
+  padding: 1rem;
+  width: 12em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  color: black;
+}
