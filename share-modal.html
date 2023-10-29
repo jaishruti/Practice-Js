@@ -14,7 +14,9 @@
         <div class="heading">Shruti Jaiswal</div>
         <div class="sub-heading">Full Stack Developer | React | Javascript</div>
         <div class="button-section">
-          <button><i class="fa-solid fa-share"></i>Share my profile</button>
+          <button onclick="openModal()">
+            <i class="fa-solid fa-share"></i>Share my profile
+          </button>
           <button>Follow me</button>
         </div>
       </div>
@@ -22,9 +24,36 @@
       <div class="round1"></div>
       <div class="round2"></div>
     </div>
+    <div class="modal">
+      <div class="share">
+        <div class="profile-header">
+          <h1>Share my Profile</h1>
+          <div><i onclick="closeModal()" class="fa-solid fa-x"></i></div>
+        </div>
+        <h2>Share via</h2>
+        <div class="icons-container">
+          <div>
+            <a
+              href="https://www.w3schools.com/howto/howto_css_rounded_images.asp"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.w3schools.com/howto/howto_css_rounded_images.asp"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" onclick="closeModal()"></div>
     <script
       src="https://kit.fontawesome.com/58a810656e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="share-modal.js"></script>
   </body>
 </html>
