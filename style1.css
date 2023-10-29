@@ -59,7 +59,6 @@ body {
   height: 90vh;
   width: 35vw;
   background-color: #918a8a1a;
-  border: 2px white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,4 +101,67 @@ button:hover {
   cursor: pointer;
   background-color: aliceblue;
   color: black;
+}
+.modal {
+  scale: 0;
+  z-index: 11;
+  /* height: 500px; */
+  /* position: relative; */
+  /* background-color: black; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  transition: 0.5s ease-in-out;
+}
+.share {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  height: 40vh;
+  width: 35vw;
+  background-color: #fdfafa1a;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.profile-header div i:hover {
+  cursor: pointer;
+  color: #d84869;
+}
+.icons-container {
+  display: flex;
+  gap: 1rem;
+}
+.icons-container div a {
+  color: #ffffff;
+  /* border: 1px solid #ffffff; */
+  font-size: 203m;
+}
+.active {
+  scale: 1;
+}
+.overlay {
+  position: fixed;
+  background-color: #4e4d4d83;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+.overlayactive {
+  opacity: 1;
+  pointer-events: initial;
 }
